@@ -17,7 +17,8 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: "temurin"
-          java-version: "7"
+          # FIXME: should use java 7
+          java-version: "8"
 
       - name: Build javadoc
         run: |
