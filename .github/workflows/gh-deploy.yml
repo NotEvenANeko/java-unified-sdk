@@ -21,6 +21,7 @@ jobs:
 
       - name: Build javadoc
         run: |
+          mvn install -DskipTests -Dgpg.skip
           mvn javadoc:javadoc
 
       - name: Deploy to gh-pages
