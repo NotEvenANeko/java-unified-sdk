@@ -22,7 +22,7 @@ jobs:
       - name: Build javadoc
         run: |
           mvn install -DskipTests -Dgpg.skip
-          mvn javadoc:javadoc
+          mvn javadoc:aggregate
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
